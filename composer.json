@@ -3,7 +3,7 @@
     "description": "Adapter of slepic/http-transfer ObserverInterface to guzzlehttp/guzzle middleware.",
     "type": "library",
     "require": {
-        "php": "^5.6 || ^7.0",
+        "php": ">=5.6",
         "guzzlehttp/guzzle": "^6.3",
         "slepic/http-transfer": "^0.1"
     },
