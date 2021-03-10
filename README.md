@@ -8,7 +8,7 @@ Adapter of [ObserverInterface](https://github.com/slepic/http-transfer/blob/mast
 
 ## Requirements 
 
-PHP 5.6 or 7
+PHP >=5.6
 
 ## Installation
 
