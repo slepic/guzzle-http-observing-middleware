@@ -4,6 +4,7 @@
 namespace Slepic\Guzzle\Http\ObservingMiddleware;
 
 use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Promise\Create;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Slepic\Http\Transfer\Observer\ObserverInterface;
@@ -42,7 +43,7 @@ class ObservingMiddleware
                         ? $exception->getResponse()
                         : null;
                     $delegate->error($exception, $response);
-                    return \GuzzleHttp\Promise\rejection_for($exception);
+                    return Create::rejectionFor($exception);
                 }
             );
         };
